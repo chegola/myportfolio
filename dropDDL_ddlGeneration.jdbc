@@ -1,0 +1,12 @@
+ALTER TABLE transaction DROP CONSTRAINT FK_transaction_sec_id
+ALTER TABLE transaction DROP CONSTRAINT FK_transaction_portfolio_id
+ALTER TABLE cost DROP CONSTRAINT FK_cost_portfolio_id
+ALTER TABLE cost DROP CONSTRAINT FK_cost_txn_id
+ALTER TABLE holding DROP CONSTRAINT FK_holding_portfolio_id
+ALTER TABLE holding DROP CONSTRAINT FK_holding_sec_id
+DROP TABLE portfolio
+DROP TABLE security
+DROP TABLE transaction
+DROP TABLE cost
+DROP TABLE holding
+DROP TABLE cash_balance
